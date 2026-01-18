@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dịch vụ thuê xe tự lái AutoRent - Tự do lái xe, không cần tài xế. Đội xe 4-7 chỗ đời mới, giá thuê hợp lý theo giờ/ngày." />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Thuê xe tự lái - AutoRent</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/lichhen.css" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/images.js"></script>
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav class="menu">
+      <ul>
+        <li class="active">
+          <a
+            href="#"
+            id="btnDatLich"
+            data-bs-toggle="modal"
+            data-bs-target="#modalDatLich"
+            >THUÊ XE TỰ LÁI</a
+          >
+        </li>
+        <li><a href="xehopdong.html">XE HỢP ĐỒNG</a></li>
+        <li><a href="index.html">TRANG CHỦ</a></li>
+        <li><a href="e-book.html">XE HOA XE CƯỚI</a></li>
+        <li><a href="lienhe.html">LIÊN HỆ</a></li>
+        <li class="login"><a href="login.html">Đăng ký / Đăng nhập</a></li>
+      </ul>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="hero-section">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1>Dịch vụ thuê xe tự lái AutoRent</h1>
+          <p>Tự do lái xe • Không cần tài xế • Giá cả hợp lý</p>
+          <button class="hero-btn" data-bs-toggle="modal" data-bs-target="#modalDatLich">
+            ĐẶT XE NGAY
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- THÔNG TIN DỊCH VỤ -->
+    <section class="info-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <div class="info-box">
+              <div class="info-icon">🚗</div>
+              <h3>Tự do lựa chọn xe</h3>
+              <p>Đa dạng dòng xe từ 4-7 chỗ, đời mới, bảo dưỡng định kỳ</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="info-box">
+              <div class="info-icon">⭐</div>
+              <h3>Không cần tài xế</h3>
+              <p>Tự do lái xe, không ràng buộc lộ trình, linh hoạt thời gian</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="info-box">
+              <div class="info-icon">💰</div>
+              <h3>Giá thuê hợp lý</h3>
+              <p>Bảng giá theo giờ/ngày rõ ràng, nhiều ưu đãi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL ĐẶT THUÊ XE Ô TÔ -->
+    <div class="modal fade" id="modalDatLich" tabindex="-1">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content p-4" style="border-radius: 20px">
+          <button
+            type="button"
+            class="btn-close position-absolute end-0 m-3"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <h2 class="mb-4">Đặt thuê xe tự lái</h2>
+
+          <form id="formDatLich">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label>Họ và tên</label>
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="col-md-6">
+                <label>Số điện thoại</label>
+                <input type="tel" class="form-control" required />
+              </div>
+              <div class="col-md-6">
+                <label>Loại xe tự lái</label>
+                <select class="form-select" required>
+                  <option selected disabled>-- Chọn loại xe --</option>
+                  <option>Xe 4 chỗ (Toyota Vios, Honda City)</option>
+                  <option>Xe 5 chỗ (Toyota Camry, Honda Accord)</option>
+                  <option>Xe 7 chỗ (Toyota Innova, Mitsubishi Xpander)</option>
+                  <option>Xe 7 chỗ (Toyota Fortuner, Ford Everest)</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label>Ngày thuê</label>
+                <input type="date" class="form-control" required />
+              </div>
+              <div class="col-md-6">
+                <label>Điểm đón</label>
+                <input type="text" class="form-control" placeholder="Địa chỉ đón" required />
+              </div>
+              <div class="col-md-6">
+                <label>Điểm đến</label>
+                <input type="text" class="form-control" placeholder="Địa chỉ đến" required />
+              </div>
+              <div class="col-12">
+                <label>Ghi chú</label>
+                <textarea class="form-control" rows="3" placeholder="Yêu cầu đặc biệt (nếu có)"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-warning mt-4 px-4">
+              Đặt thuê xe
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- KHUNG XÁC NHẬN THÀNH CÔNG NGOÀI -->
+    <div id="successPopup" class="popup">
+      <div class="popup-content">
+        ✅ Đặt thuê xe thành công!
+        <p style="font-size: 14px; margin-top: 10px; color: #666;">Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.</p>
+        <button id="closePopup" onclick="window.location.href='index.html'">
+          QUAY LẠI TRANG CHỦ
+        </button>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+     <footer>
+      <div class="footer-content">
+        <div class="row">
+          <div class="col-md-4 footer-section">
+            <h3>AutoRent Car Rental</h3>
+            <p>Biến hành trình của bạn thành trải nghiệm đẳng cấp: Cho thuê xe ô tô Miền Trung.
+              <p>Tự hào là đối tác di chuyển đáng tin cậy, chúng tôi mang đến dịch vụ chuyên nghiệp, 
+                an toàn và tận tâm, với đội xe đa dạng, luôn sẵn sàng đồng hành cùng mọi cung đường của bạn.</p>
+          </div>
+          <div class="col-md-4 footer-section">
+            <h3>Liên kết nhanh</h3>
+            <p><a href="index.html">Trang chủ</a></p>
+            <p><a href="e-book.html">Xe Hoa Xe Cưới</a></p>
+            <p><a href="xehopdong.html">Xe Hợp Đồng</a></p>
+            <p><a href="lienhe.html">Liên hệ</a></p>
+          </div>
+          <div class="col-md-4 footer-section">
+            <h3>Hỗ Trợ</h3>
+             <p> Mọi thắc mắc xin liên hệ với chúng tôi để được giải đáp </p>
+            <div class="social-links">
+            
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 AutoRent Car Rental. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- SCRIPT -->
+    <script>
+      const menuItems = document.querySelectorAll(".menu li a");
+      const btnDatLich = document.getElementById("btnDatLich");
+      const modalDatLich = document.getElementById("modalDatLich");
+
+      // Active menu khi modal mở
+      modalDatLich.addEventListener("shown.bs.modal", function () {
+        menuItems.forEach((i) => i.parentElement.classList.remove("active"));
+        btnDatLich.parentElement.classList.add("active");
+      });
+
+      // Xử lý gửi form
+      const formDatLich = document.getElementById("formDatLich");
+      const successPopup = document.getElementById("successPopup");
+
+      formDatLich.addEventListener("submit", function (e) {
+        e.preventDefault();
+        formDatLich.reset();
+        const modalInstance = bootstrap.Modal.getInstance(modalDatLich);
+        modalInstance.hide(); // ẩn modal sau khi gửi
+        successPopup.style.display = "flex"; // hiện popup ngoài modal
+      });
+
+      // Active menu khi load trang
+      menuItems.forEach((item) => {
+        if (item.href === window.location.href) {
+          item.parentElement.classList.add("active");
+        }
+      });
+    </script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

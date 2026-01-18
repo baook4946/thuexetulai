@@ -1,0 +1,613 @@
+/* ===========================
+   XEHOPDONG.CSS - Styles cho trang bảng giá xe
+   =========================== */
+
+/* XE HỢP ĐỒNG BANNER */
+.xehopdong-banner {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.xehopdong-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;        /* QUAN TRỌNG */
+    object-position: center;  /* căn giữa ảnh */
+    display: block;
+}
+
+/* WHY XE HỢP ĐỒNG SECTION */
+.why-xehopdong {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 42px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #666;
+}
+
+.why-item {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.why-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.why-item img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.why-item h3 {
+  font-size: 22px;
+  color: #b88b58;
+  margin-bottom: 15px;
+}
+
+.why-item p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+}
+
+/* CAROUSEL CONTROLS */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: #b88b58;
+  border-radius: 50%;
+  opacity: 0.8;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  background-color: #d4af37;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* TEMPLATE SECTION / BẢNG GIÁ */
+.template-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.template-title {
+  font-size: 42px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.template-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.template-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+}
+
+.template-list.two-items {
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.template-item {
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  padding: 20px;
+}
+
+.template-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.template-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.template-item h3 {
+  font-size: 28px;
+  color: #c59a6a;
+  margin: 20px 0 15px;
+}
+
+.template-item p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.8;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.template-item strong {
+  color: #b88b58;
+  font-weight: 600;
+}
+
+/* BOOKING SECTION */
+.booking-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #b88b58, #d4af37);
+  text-align: center;
+  color: #fff;
+}
+
+.booking-section h2 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.booking-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.booking-section .btn-book {
+  background-color: #fff;
+  color: #b88b58;
+  padding: 15px 50px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.booking-section .btn-book:hover {
+  background-color: #1a1a1a;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* TESTIMONIALS SECTION */
+.testimonials-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+}
+
+.testimonials-section .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonials-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.testimonial-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.testimonial-item .quote {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-item .author {
+  font-size: 18px;
+  color: #b88b58;
+  font-weight: 600;
+}
+
+.testimonial-item .stars {
+  color: #d4af37;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* CONTACT NOW SECTION */
+.contact-now {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+  color: #333;
+}
+
+.contact-header {
+  margin-bottom: 20px;
+}
+
+.contact-header .subtitle {
+  display: inline-block;
+  font-size: 14px;
+  color: #b88b58;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.contact-header h2 {
+  font-size: 42px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.contact-desc {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(184, 139, 88, 0.1);
+  outline: none;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn-send {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 18px 60px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn-send:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* SUCCESS POPUP */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup.show {
+  display: flex;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.popup-content p {
+  font-size: 20px;
+  color: #28a745;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.popup-content button {
+  background-color: #d4af37;
+  color: #1a1a1a;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #fcfcfc;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .xehopdong-banner img {
+    height: 300px;
+  }
+  
+  .section-header h2,
+  .template-title,
+  .booking-section h2 {
+    font-size: 24px;
+  }
+  
+  .section-header p {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+  
+  .why-xehopdong,
+  .template-section,
+  .testimonials-section,
+  .booking-section {
+    padding: 40px 15px;
+  }
+  
+  .template-list.two-items {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .template-item {
+    padding: 15px;
+  }
+  
+  .why-item {
+    margin: 10px 0;
+    padding: 20px 15px;
+  }
+  
+  .why-item h3 {
+    font-size: 18px;
+  }
+  
+  .testimonials-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .contact-header h2 {
+    font-size: 24px;
+  }
+  
+  .contact-form {
+    padding: 25px 15px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .btn-send {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .popup-content {
+    margin: 0 20px;
+    padding: 40px 25px;
+  }
+}
+
+/* ===========================
+   FOOTER STYLES
+   =========================== */
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 60px 0 20px;
+  margin-top: 80px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-box {
+  padding: 0 15px;
+}
+
+.footer-box h4 {
+  color: #d4af37;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-box p {
+  color: #ccc;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer-box a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-box a:hover {
+  color: #d4af37;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #d4af37;
+  transform: translateY(-3px);
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+}
+
+/* RESPONSIVE FOOTER */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+}

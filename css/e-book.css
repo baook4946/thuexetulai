@@ -1,0 +1,508 @@
+/* ===========================
+   E-BOOK.CSS - Styles cho trang dịch vụ
+   =========================== */
+
+/* EBOOK BANNER */
+.ebook-banner {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ebook-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.ebook-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.1) 100%);
+  pointer-events: none;
+}
+
+/* EBOOK CONTAINER */
+.ebook-container {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.ebook-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.ebook-left {
+  flex: 1;
+}
+
+.ebook-left img {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  width: 100%;
+  height: auto;
+}
+
+.ebook-right {
+  flex: 1;
+}
+
+.ebook-right h2 {
+  font-size: 42px;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+.ebook-right p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.ebook-btn {
+  background-color: #d4af37;
+  color: #1a1a1a;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.ebook-btn:hover {
+  background-color: #f0c653;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+/* SUCCESS TOAST */
+.success-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: #fff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  display: none;
+  align-items: center;
+  gap: 15px;
+  z-index: 9999;
+  animation: slideIn 0.4s ease;
+}
+
+.success-toast.show {
+  display: flex;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.success-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: #28a745;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* EBOOK POPUP - TƯ VẤN */
+.ebook-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease;
+}
+
+.ebook-overlay.show {
+  display: block;
+}
+
+.ebook-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 90%;
+  display: none;
+  z-index: 10001;
+  animation: slideUp 0.4s ease;
+}
+
+.ebook-popup.show {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, -40%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.ebook-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  line-height: 1;
+}
+
+.ebook-close:hover {
+  color: #333;
+}
+
+.ebook-header {
+  font-size: 28px;
+  color: #1a1a1a;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ebook-subtitle {
+  font-size: 15px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.ebook-field {
+  margin-bottom: 20px;
+}
+
+.ebook-field label {
+  display: block;
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.ebook-field input,
+.ebook-field select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.ebook-field input:focus,
+.ebook-field select:focus {
+  border-color: #b88b58;
+  box-shadow: 0 0 0 3px rgba(184, 139, 88, 0.1);
+  outline: none;
+}
+
+.ebook-submit {
+  width: 100%;
+  background-color: #d4af37;
+  color: #1a1a1a;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.ebook-submit:hover {
+  background-color: #b88b58;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(184, 139, 88, 0.3);
+}
+
+/* SERVICE BLOCK */
+.service-block {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.service-tag {
+  color: #b88b58;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service-title {
+  font-size: 42px;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.service-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.service-text {
+  flex: 1;
+}
+
+.service-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.service-text strong {
+  color: #b88b58;
+  font-weight: 600;
+}
+
+.service-image-one {
+  flex: 1;
+}
+
+.service-image-one img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* STUDIO BLOCK */
+.studio-block {
+  padding: 80px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.studio-header {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.studio-tag {
+  color: #b88b58;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.studio-title {
+  font-size: 42px;
+  color: #1a1a1a;
+  margin: 15px 0 25px;
+}
+
+.studio-desc {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.studio-gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.studio-item {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.studio-item:hover {
+  transform: translateY(-10px);
+}
+
+.studio-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* CONTACT CTA */
+.contact-cta {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+  color: #333;
+}
+
+.contact-cta .subtitle {
+  display: inline-block;
+  font-size: 14px;
+  color: #b88b58;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
+
+.contact-cta h2 {
+  font-size: 42px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.contact-cta p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.contact-cta button {
+  background-color: #d4af37;
+  color: #1a1a1a;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-cta button:hover {
+  background-color: #b88b58;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .ebook-banner {
+    min-height: 250px;
+    max-height: 400px;
+  }
+  
+  .ebook-banner img {
+    max-height: 400px;
+  }
+  
+  .ebook-wrapper,
+  .service-content {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 15px;
+  }
+  
+  .ebook-left,
+  .ebook-right {
+    width: 100%;
+  }
+  
+  .ebook-right h2,
+  .service-title,
+  .studio-title {
+    font-size: 24px;
+  }
+  
+  .ebook-right p,
+  .service-text p {
+    font-size: 15px;
+  }
+  
+  .studio-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .service-image-one img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .success-toast {
+    left: 20px;
+    right: 20px;
+    font-size: 14px;
+  }
+  
+  .ebook-popup {
+    width: 90%;
+    padding: 25px 20px;
+  }
+}
