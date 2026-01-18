@@ -5,14 +5,6 @@
 // Dữ liệu mẫu (trong thực tế sẽ kết nối với backend)
 const defaultUsers = [
     {
-        username: 'admin',
-        password: 'admin123',
-        role: 'admin',
-        fullname: 'Administrator',
-        email: 'admin@AutoRent.vn',
-        phone: '0123456789'
-    },
-    {
         username: 'user',
         password: 'user123',
         role: 'user',
